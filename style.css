@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: #f7542e; */
+}
+:root{
+    --title:#3d3d3d;
+    --white:#fff;
+    --red:#ed2651;
+    --text:#4f4f4f;
+    --cyan:#18d4ce;
+}
+body {
+    font-family: 'Space Mono', monospace;
+}
+p{
+    font-weight: 400;
+    color: var(--text);
+}
+.button{
+    font-family: 'Space Mono',monospace;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: var(--title);
+    margin-top: 20px;
+    transition: .5s all;
+}
+.button:hover{
+    background: transparent;
+    border: 2px solid var(--title);
+    color: var(--title);
+}
+h1{
+    font-size: 2.75rem;
+    color: var(--title);
+    font-weight: 700;
+    /* margin: 35px 0; */
+}
+.text{
+    line-height: 1.5rem;
+    max-width: 350px;
+}
+.container{
+    width: 96%;
+    margin: 0 auto;
+}
+/* ----- main css  */
+header{
+    padding: 25px 25px;
+    height: 100vh;
+}
+nav{
+    font-size: 24px;
+    font-family: 'Inconsolata',monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+section{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container{
+    width: 100%;
+    height: 330px;
+    display: flex;
+    gap: 1.8rem;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: .8rem;
+    width: 500px;
+}
+.content p{
+    width: 270px;
+    font-weight: 400;
+    height: auto;
+    font-size: 1.4rem;
+    font-family: 'Inconsolata';
+    /* margin-top: 25px; */
+}
+footer{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p span{
+    color: var(--cyan);
+    font-weight: 700;
+}
+footer p a{
+    color: var(--red);
+    font-weight: 700;
+    text-decoration: none;
+}
+@media screen and (min-width:1120px) {
+    .container{
+        width: 98%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:750px) {
+    .container{
+        width: 100%;
+    }
+    header{
+        height: 100vh;
+    }
+    .main-container{
+        flex-direction: column;
+    }
+    img{
+        width: 100%;
+        height: 300px;
+    }
+    h1{
+        width: 300px;
+        font-size: 1.8rem;
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+    }
+}
